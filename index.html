@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+<body>
+    <p><span> Question No 1</span> : Write the code to access element which is having id as "text".</p>
+    <h2 id="text">Welcome to JS</h2>
+    <p><span> Question No 2</span> : Write the code to access element which is having tag as "h1".</p>
+    <h1>I am Learning JS DOM functionality</h1>
+    <p><span> Question No 3</span> : Write the code to access element which is having class as "box".</p>
+    <div class="box">
+        <h3>I am box1</h3>
+        <h3>I am box2</h3>
+        <h3>I am box3</h3>
+    </div>
+    <p><span> Question No 4</span> : Change the heading from "hello" to "hello World" using DOM function. </p>
+    <h1 id="change">hello</h1>
+    <p><span> Question No 5</span> : Create an HTML page having content as Hello World and a button named Replace Text.When user will click on this button page content should be change to "Welcome to Elevation Acedamy." </p>
+    <h1 id="content">hello world</h1>
+    <button onclick="replace()">Replace Text</button>
+    <p><span> Question No 6</span> : Add one style attribute give text color as red and id attribute and give the id value as "heading" in the above given h1 tag using DOM function. </p>
+    <h1 id="heading">Hello</h1>
+    <p><span> Question No 7</span> : Create 3 card on HTML page and arrange them using flex property in row or horizontal direction and also create button at the bottom named "Change Flex direction".When user click on this button the card arrangement should be change in vertical direction. </p>
+    <div class="item">
+    <div class="card">
+        <div class="card1 card">1</div> 
+        <div class="card1 card">2</div> 
+        <div class="card1 card">3</div> 
+    </div>
+    <button id="bottom" onclick="bottom()">Change Flex Direction</button>
+    </div>
+    <p><span> Question No 8</span> :What’s the difference between window vs document?  </p>
+    <div id="container">In the context of web development and browser scripting "document" and "window" refer to the different objects that are part of  the Document Object Model (DOM) and represent different aspect of a web page.Here's the difference between them: </div><br>
+    <div class="parent">
+    <div class="leftcontainer">
+        <ol>Window
+            <li>The Window object represent the browser window or tab in which the web page is loaded</li>
+            <li>It serves as the global object in the browser's Javascript environment and provides methods and properties for controlling the browser and interacting with the user.</li>
+            <li>The window object also encompasses propteries releted to the browser environment ,such as the screen dimensions,history and more.</li>
+        </ol>
+    </div>
+    <div class="rightcontainer"><ol>Document
+        <li>The document object represents the HTML content of the current web page.It is a property of the global window object.</li>
+        <li>It provides an interface to access and manipulation the elements content and structure of the web page.</li>
+        <li>The document object essentially a representation of the entire HTML document , including all its elements,text and attributes.</li>
+    </ol></div>
+    </div>
+    <p><span> Question No 9</span> : Write code to implement timer clock using JS -- display HH:MM:SS -- the time should keep updating every second </p>
+    <div class="clock">
+        <div class="hour">
+            <p id="hour">10</p>
+            <p>HH</p>
+        </div>
+        <div  class="min">
+            <p id="min">50</p>
+            <p>MM</p>
+        </div>
+        <div  class="sec">
+            <p id="sec">20</p>
+            <p>SS</p>
+        </div>
+        <div  class="ampm">
+            <p id="ampm">PM</p>
+        </div>
+    </div>
+    
+    <script src="./index.js"></script>
+</body>
+</html>
